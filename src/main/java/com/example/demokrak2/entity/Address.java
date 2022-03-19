@@ -8,13 +8,14 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
-
+/*
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Address {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
@@ -33,4 +34,8 @@ public class Address {
         this.zipCode = zipCode;
         this.city = city;
     }
+
+
 }
+
+ */

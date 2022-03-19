@@ -8,12 +8,15 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/*
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 
 public class Hobby {
+
+
     @Id
     String name;
 
@@ -21,8 +24,8 @@ public class Hobby {
     String category;
     String inOut;
 
-   /* @OneToMany
-    HobbyInfo hobbyInfo;*/
+   @OneToMany
+    HobbyInfo hobbyInfo;
 
 
     public Hobby(HobbyRequest body){
@@ -40,3 +43,4 @@ public class Hobby {
     }
 
 }
+*/

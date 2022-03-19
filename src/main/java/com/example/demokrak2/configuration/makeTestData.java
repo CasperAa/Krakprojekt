@@ -18,7 +18,7 @@ public class makeTestData implements ApplicationRunner {
         this.memberRepository = memberRepository;
     }
 
-    public void makeMembers(){
+    public void makeData(){
         Person m1 = memberRepository.save(new Person("amanda@amanda.dk", "Amanda", "Amandasen", "70121416"));
         Person m2 = memberRepository.save(new Person("casper@casper.co.uk", "Casper", "Caspersen", "88888888"));
 
@@ -28,7 +28,9 @@ public class makeTestData implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
 
-        makeMembers();
+        memberRepository.deleteAll();
+
+        makeData();
 
     }
 }

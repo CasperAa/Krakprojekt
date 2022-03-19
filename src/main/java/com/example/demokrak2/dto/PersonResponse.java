@@ -27,7 +27,7 @@ public class PersonResponse {
         this.lastName = person.getLastName();
         this.phone = person.getPhone();
         if(includeId){
-            this.id = id;
+            this.id = getId();
         }
         if(includeContactInfo){
             this.phone = person.getPhone();

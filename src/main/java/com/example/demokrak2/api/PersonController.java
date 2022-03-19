@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-
-
 @RequestMapping("api/krak")
+
 public class PersonController {
     PersonService personService;
 
