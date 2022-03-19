@@ -1,7 +1,6 @@
 package com.example.demokrak2.entity;
 
 import com.example.demokrak2.dto.HobbyRequest;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,7 +11,6 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
-//@AllArgsConstructor
 @NoArgsConstructor
 
 public class Hobby {
