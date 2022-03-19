@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
 public class Person {
     @Id
@@ -25,10 +25,11 @@ public class Person {
 
     @Column(length = 20)
     String phone;
-
+/*
     @ManyToOne
     Address connectedAddress;
 
+ */
 
     public Person(PersonRequest body) {
         this.email = body.getEmail();
