@@ -3,7 +3,7 @@ package com.example.demokrak2.service;
 import com.example.demokrak2.dto.PersonRequest;
 import com.example.demokrak2.dto.PersonResponse;
 import com.example.demokrak2.entity.Person;
-import com.example.demokrak2.error.Client4xxException;
+//import com.example.demokrak2.error.Client4xxException;
 import com.example.demokrak2.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +19,11 @@ public class PersonService {
         this.personRepository=personRepository;
     }
 
+    public List<PersonResponse> getPersons(){
+        List<Person> persons = personRepository.findAll();
+        return  PersonResponse.getPersonEntities(persons);
+    }
+    /*
 
     public PersonResponse addPerson(PersonRequest body) throws Exception {
 
@@ -31,10 +36,7 @@ public class PersonService {
     }
 
 
-    public List<PersonResponse> getPersons(){
-        List<Person> persons = personRepository.findAll();
-        return  PersonResponse.getPersonEntities(persons);
-    }
+
 
 
     //Til denne metode skal der huskes at lave en constructure i PersonResponse
@@ -51,6 +53,8 @@ public class PersonService {
     public void deletePerson(String email){
         personRepository.deleteById(email);
     }
+
+     */
 
 }
 

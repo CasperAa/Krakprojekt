@@ -16,6 +16,12 @@ public class PersonController {
         this.personService = personService;
     }
 
+    @GetMapping
+    public List<PersonResponse> getPersons (){
+        return personService.getPersons();
+    }
+
+    /*
     @PostMapping("/{id}")
     public PersonResponse addPerson(@RequestBody PersonRequest body) throws Exception {
         return personService.addPerson(body);
@@ -27,15 +33,12 @@ public class PersonController {
     }
 
 
-    @GetMapping
-    public List<PersonResponse> getPersons (){
-        return personService.getPersons();
-    }
-
     @DeleteMapping("/{email}")
     public void deleteMember(@PathVariable String email) {
         personService.deletePerson(email);
     }
+
+     */
 
 }
 

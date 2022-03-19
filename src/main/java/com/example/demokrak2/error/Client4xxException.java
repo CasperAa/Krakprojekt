@@ -1,5 +1,5 @@
 package com.example.demokrak2.error;
-
+/*
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
@@ -19,3 +19,5 @@ public class Client4xxException extends RuntimeException{
         return status;
     }
 }
+
+ */
